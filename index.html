@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Minat Coding</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1 id="title">Survey Minat Coding</h1>
+      <p id="description">
+        Ini hanya survey untuk mengetahui minat teman-teman pada dunia coding.
+      </p>
+      <section>
+        <form action="" id="survey-form">
+          <label for="name" id="name-label"> Nama Lengkap: </label>
+          <input
+            required
+            placeholder="Jhon doe..."
+            type="text"
+            name="name"
+            id="name"
+          />
+          <label for="email" id="email-label"> Email: </label>
+          <input
+            required
+            placeholder="my@mail.com"
+            type="email"
+            name="email"
+            id="email"
+          />
+          <label for="number" id="number-label"> Umur(tahun): </label>
+          <input
+            placeholder="18"
+            min="18"
+            max="100"
+            type="number"
+            name="age"
+            id="number"
+          />
+          <label> Pekerjaan: </label>
+          <select name="dropdown" id="dropdown">
+            <option value="">(Pilih)</option>
+            <option value="1">Pelajar</option>
+            <option value="2">Mahasiswa</option>
+            <option value="3">Pekerja Profesional</option>
+            <option value="4">Lainnya</option>
+          </select>
+
+          <div class="">
+            <p>Jenis kelamin :</p>
+            <label for="male">
+              <input id="male" type="radio" name="jenis-kelamin" value="L" />
+              Laki-laki
+            </label>
+            <label for="female">
+              <input id="female" type="radio" name="jenis-kelamin" value="P" />
+              Perempuan
+            </label>
+          </div>
+
+          <div class="">
+            <p>Topik yang diminati:</p>
+            <label for="devops">
+              <input type="checkbox" name="topic" id="devops" value="DevOps" />
+              DevOps
+            </label>
+            <label for="frontend">
+              <input
+                type="checkbox"
+                name="topic"
+                id="frontend"
+                value="Frontend"
+              />
+              Frontend
+            </label>
+            <label for="backend">
+              <input
+                type="checkbox"
+                name="topic"
+                id="backend"
+                value="Backend"
+              />
+              Backend
+            </label>
+            <label for="qualityassurance">
+              <input
+                type="checkbox"
+                name="topic"
+                id="qualityassurance"
+                value="Quality Assurance"
+              />
+              Quality Assurance
+            </label>
+          </div>
+          <label for="reason"> Apa alasan kamu memilih topik itu? </label>
+          <textarea name="reason" id="reason" cols="30" rows="3"></textarea>
+          <button type="submit" id="submit">Kirim</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
